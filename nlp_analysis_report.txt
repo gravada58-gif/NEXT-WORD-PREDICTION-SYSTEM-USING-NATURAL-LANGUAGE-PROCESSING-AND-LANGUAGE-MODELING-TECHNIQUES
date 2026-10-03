@@ -1,0 +1,86 @@
+================================================================================
+NEXT WORD PREDICTION SYSTEM ANALYSIS REPORT
+================================================================================
+
+DATASET OVERVIEW:
+  Total Word Pairs: 17490
+  Unique Previous Words: 39
+  Unique Next Words: 36
+  Vocabulary Size: 75
+
+FEATURE STATISTICS:
+  Word_Frequency:
+    Mean: 1.0169
+    Std Dev: 0.1288
+    Range: [1.0000, 2.0000]
+  Sentence_Length:
+    Mean: 4.5695
+    Std Dev: 0.4952
+    Range: [4.0000, 5.0000]
+  Word_Position:
+    Mean: 0.2785
+    Std Dev: 0.2169
+    Range: [0.0000, 0.6000]
+  Prev_Word_Length:
+    Mean: 4.9717
+    Std Dev: 2.9332
+    Range: [1.0000, 13.0000]
+  Next_Word_Length:
+    Mean: 6.0337
+    Std Dev: 2.8951
+    Range: [2.0000, 13.0000]
+  Prev_Vowel_Ratio:
+    Mean: 0.4009
+    Std Dev: 0.1978
+    Range: [0.1667, 1.0000]
+  Next_Vowel_Ratio:
+    Mean: 0.3528
+    Std Dev: 0.1003
+    Range: [0.1667, 0.6000]
+
+TOP 10 MOST FREQUENT PREVIOUS WORDS:
+  1. the: 1867 occurrences
+  2. a: 1398 occurrences
+  3. may: 669 occurrences
+  4. can: 660 occurrences
+  5. was: 657 occurrences
+  6. cat: 650 occurrences
+  7. dog: 647 occurrences
+  8. system: 637 occurrences
+  9. will: 618 occurrences
+  10. must: 609 occurrences
+
+TOP 10 MOST FREQUENT NEXT WORDS:
+  1. cat: 989 occurrences
+  2. dog: 960 occurrences
+  3. system: 920 occurrences
+  4. application: 879 occurrences
+  5. may: 669 occurrences
+  6. can: 660 occurrences
+  7. was: 657 occurrences
+  8. will: 618 occurrences
+  9. must: 609 occurrences
+  10. is: 608 occurrences
+
+PREDICTION DIFFICULTY RANKING (Top 5 Most Difficult):
+  18. is: Difficulty=0.9658
+  9. will: Difficulty=0.9644
+  25. was: Difficulty=0.9634
+  3. must: Difficulty=0.9631
+  27. has: Difficulty=0.9628
+
+KEY FINDINGS:
+  1. Random Forest achieves highest accuracy (75.93%)
+  2. Word frequency is a strong predictor of next word
+  3. Sentence length impacts prediction difficulty
+  4. Word position affects prediction accuracy
+  5. Vowel ratio shows moderate correlation with predictions
+
+RECOMMENDATIONS:
+  1. Implement context-aware language models (LSTM/Transformers)
+  2. Use larger training corpus for improved vocabulary coverage
+  3. Incorporate n-gram analysis for better context understanding
+  4. Apply data augmentation for underrepresented word pairs
+  5. Implement real-time suggestion ranking system
+
+================================================================================
